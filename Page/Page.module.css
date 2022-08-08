@@ -1,0 +1,94 @@
+.page {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  /* flex-direction: column; */
+  height: 100vh;
+  /* width: 400px; */
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+
+  background-color: #eee;
+  /* position: relative;
+    left:400px;
+    bottom:100px; */
+}
+
+.header {
+  /* border:solid 1px red; */
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+
+
+  z-index: 20;
+  transition: all 0.5s;
+}
+
+.header:hover {
+  transform: translateY(-.4vmax);
+  box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.363);
+  /* box-shadow: 3px 3px 8px #eee, -3px -3px 8px #eee; */
+}
+
+.from {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin:10px; */
+}
+
+.label {
+  /* margin:10px; */
+  /* height:40px; */
+  width: 300px;
+  padding: 2px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  /* border-radius: 5px; */
+}
+
+.label p {
+  margin: 2px;
+}
+
+input {
+  border: 2px solid rgb(207, 195, 195);
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px #eee, -2px -2px -2px #eee;
+}
+
+.Invalid {
+  border: 2px solid red;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #eee, -2px -2px -2px red;
+}
+
+.city {
+  padding: 4px;
+  width: 300px;
+  /* background-color:red; */
+  /* border: 2px solid rgb(207, 195, 195); */
+  /* border-radius: 3px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.city select {
+  border: none;
+  padding: 6px;
+}
+
+/* .red {
+  color: red;
+}
+.grey{
+  color:grey;
+} */
