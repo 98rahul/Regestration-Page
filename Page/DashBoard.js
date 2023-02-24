@@ -36,7 +36,7 @@ export default function App(props){
         case 'NOT_FOUND':{
             return <NotFound />
         }
-    } bad way 
+    } bad way/apporach to load different component
     */
 
     const Component = usersMap[props.userType];
