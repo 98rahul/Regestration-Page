@@ -15,3 +15,29 @@ const DashBoard = () => {
   );
 };
 export default DashBoard;
+
+
+// how to load different component
+const usersMap ={
+    ADMIN:Admin,
+    USER:User,
+    NOT_FOUND:NotFound
+}
+
+export default function App(props){
+
+    switch(props.userType) {
+        case 'ADMIN':{
+            return <Admin />
+        }
+        case 'USER':{
+            return <User />
+        }
+        case 'NOT_FOUND':{
+            return <NotFound />
+        }
+    }
+
+    const Component = usersMap[props.userType];
+    return <Component />
+}
