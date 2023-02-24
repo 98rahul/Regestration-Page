@@ -26,7 +26,7 @@ const usersMap ={
 
 export default function App(props){
 
-    switch(props.userType) {
+/*    switch(props.userType) {
         case 'ADMIN':{
             return <Admin />
         }
@@ -36,7 +36,8 @@ export default function App(props){
         case 'NOT_FOUND':{
             return <NotFound />
         }
-    }
+    } bad way 
+    */
 
     const Component = usersMap[props.userType];
     return <Component />
